@@ -1,0 +1,7 @@
+CREATE TABLE temps (
+    ville           varchar(80),
+    t_basse         int,           -- température basse
+    t_haute         int,           -- température haute
+    prcp            real,          -- précipitation
+    date            date
+);

@@ -1,0 +1,29 @@
+URL de l'apply
+
+https://127.0.0.1:8080/TIM
+
+application principale qui ouvre Machine.html
+
+
+https://127.0.0.1:8080/code001
+
+nouveau code : essai de dessin des carres 8*8
+
+
+https://127.0.0.1:8080/code002
+code le plus complet avec la feuille de sprite, spritesheet
+
+https://127.0.0.1:8080/code003
+reprise du code de Machine.html pour le modifier
+
+lire des logs ? json ?
+
+destination d_json {
+   file("/var/log/messagesJson.log" template("$(format-json --scope selected_macros --scope nv_pairs)\n"));
+};
+
+
+# PROBLEME !!!
+comment streamer 2 flux ????????????????????
+
+log.py pour tester !!!!!

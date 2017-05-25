@@ -1,0 +1,100 @@
+<html>
+
+	<head>
+	<meta charset="utf-8" />
+	<title>LOG</title>
+	
+	<script src={{url_for('static', filename='js/jquery-1.0.1.pack.js')}} type="text/javascript"></script>
+    
+
+				<style>
+				.type {
+  				font-family: monospace;
+				}
+				#introduction {
+  				color: gray;
+				}
+
+				</style>
+
+
+	<link  rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/log.css')}}">
+	</head>
+
+	<body>
+
+		<div id="main">
+		
+			<div id="texte">
+
+			{% extends "entete.html" %}
+
+			{% block content %}
+			
+			<h1 >TIM REBOOT</h1>
+			
+				<h3>LOGS LOGS LOGS LOGS</h3>
+			
+			</div>
+
+			<div id="contenu">
+						
+						<ul id="nav-box">
+							<li><a href="../">test</a></li>	
+							<li><a href="lePing">PING </a></li>
+							<li><a href="listageMachines">Lister </a></li>
+							<li><a href="TIM">TIM</a></li>
+						</ul>
+
+				<div id="centre">
+						
+						<p>		
+							 
+							<div id="textDiv"></div>  
+							<script type="text/javascript">  
+							
+							var logs = {{ logs|tojson }};
+							console.log(logs);
+
+							/* POUR AFFICHER LA SORTIE
+						    var div = document.getElementById("textDiv");  
+						    div.textContent =  logs;
+						    var text = div.textContent; 
+						    */
+
+						    var logs = JSON.parse(logs);
+
+						    // CREATION D UN OBJET JSON
+						    var selectObj = {FACILITY:logs[0].FACILITY,HOST:logs[0].HOST,PID:logs[0].PID}
+
+						    console.log(selectObj)
+
+						    var arr = logs;
+
+						    var nombreResultat = arr.length;
+
+						    var depart = nombreResultat - 3 ;
+
+						    for (var i = depart; i < arr.length; i++){
+								  document.write("<br><br>array index: " + i);
+								  var obj = arr[i];
+								  for (var key in obj){
+								    var value = obj[key];
+								    document.write("<br> - " + key + ": " + value);
+								  }
+								}
+
+
+							</script> 
+														
+						</p>
+						
+				</div>		
+				
+			</div>
+			{% endblock %}
+
+		</div>
+	</body>
+
+</html>

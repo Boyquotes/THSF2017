@@ -1,0 +1,43 @@
++ hello bot
+- hello humain
+
++ bonjour
+- bonjour
+
++ salut
+- bonjour
+
++ la forme
+- oui oui la forme
+
++ comment ca va
+- bien et vous
+- nm, vous?
+- va va, et vous?
+
++ tu es un bot
+- comment le sais-tu?
+
++ how are you
+- I'm great, how are you?
+- I'm good, you?
+- Good :) you?
+- Great! You?
+- I'm fine, thanks for asking!
+
++ greetings
+- Hi there!{weight=20}
+- Hello!{weight=25}
+- Yos kyoco duckeb!
+
++ tell me a poem
+- Little Miss Muffit sat on her tuffet,\n
+^ In a nonchalant sort of way.\n
+^ With her forcefield around her,\n
+^ The Spider, the bounder,\n
+^ Is not in the picture today.
+
+// There will be no space between "programmed" and "using"!
++ tu es quoi
+- I am an artificial intelligence programmed
+^ using RiveScript.

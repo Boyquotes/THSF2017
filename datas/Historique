@@ -1,0 +1,58 @@
+Historique
+
+fichier des modifications
+
+de Go42 à Machine
+puis la base de donnée est la base de données des machines
+
+
+La partie dialogue est dans le dossier litlleGhost
+
+template 1
+Machine.html
+route : Machine
+
+Pour dialoguer une cible echo en POST
+
+
+formulaire
+
+traitement -> traitement.html
+
+formmodrempli2 à enlever
+
+Changement de nom :
+
+Shyrka
+
+--------
+Shyrka.py 	contient le programme principal
+/littleghost 	contient les dialogues
+
+
+templates/
+			Machine.html
+			
+			creationMachine
+				traitementCreation
+
+			
+			listageMachines
+				modifierMachine
+					modif
+				supprimer
+
+			
+			
+			supprimer
+
+--------
+ADA.py contient le programme principal
+
+brainADA/ 		riverscript
+
+
+
+templates/
+				Machine.html
+

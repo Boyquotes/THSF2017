@@ -1,0 +1,103 @@
+#main {
+max-width:1280px;
+margin:auto;
+position:relative;
+}
+
+#contenu {
+width: 1280px;
+margin-left:140px;
+margin-right: 140px
+min-height:150px;
+}
+
+#texte {
+font-family : courier, sans-serif ;
+background-color: white;
+width:300px;
+position: absolute;
+left: 40px; 
+top: 122px; 
+opacity:0.6;
+font-size : 1em;
+}
+
+
+#texte  H1 {
+font-family : courier, sans-serif ;
+color: #a00e0e;
+}
+
+#centre {
+width:1100px;
+height:520px;
+float:left;
+border-style : dashed;
+border-width: thin;
+margin:10px;
+padding:10px;
+text-align: center;
+font-size : 0.6em;
+}
+
+#output {
+width:500px;
+color:red;
+font-size:11px;
+}
+
+
+#droite {
+font-family : courier, sans-serif ;
+margin-top: 240px;
+margin-left:240px;
+width:200px;
+
+border-style : none;
+border-width: thin;
+ 
+ }
+ 
+ 
+/*
+
+Navigation
+
+*/
+
+ ul#nav-box {
+        margin : 0 0 1.5em 0;
+        padding : 5px 1em 5px 0;
+        list-style-type : none;
+        background-color: #fff;
+        color: #4b4b69;
+        font-weight : bold;
+        font-size : 1em;
+        text-align: right;
+        margin-right: 240px;
+ }
+
+
+ ul#nav-box li {
+		font-family : courier, sans-serif ;
+        display: inline;
+        padding : 5px 0;
+ }
+
+
+ ul#nav-box li a {
+        padding : 5px 1em 5px 1em;
+        color: #4b4b69;
+        text-decoration: none;
+        border-left: 1px solid #fff;
+ }
+
+/* Ici, ce qui se passe au survol des liens : changement de la couleur du fond,
+ * de la couleur des caractères, je n'oublie pas de remettre à ce lien survolé le
+ * bord gauche que j'ai défini pour les liens « au repos ». 
+ */
+ul#nav-box li a:hover {
+        background-color: #eeeeee;
+        color: #a00e0e;
+        border-left: 1px solid #fff;
+ }

@@ -1,0 +1,21 @@
+LOGS
+
+1. Logger avec syslog-ng
+
+/etc/syslog-ng
+
+destination d_json {
+   file("/var/log/messages.json" template("$(format-json --scope selected_macros --scope nv_pairs)\n"));
+};
+
+log {
+   source(s_src); destination(d_json);
+};
+
+
+2.
+
+Récuperer les logs en python
+
+une copie dans 
+TIM/json/log.json

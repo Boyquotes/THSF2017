@@ -1,0 +1,50 @@
+Documentation
+
+
+1. Serveur python :
+Flask
+
+
+Python 2.7
+
+
+serveur basique :
+
+app = Flask(__name__)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080, threaded=True, debug=True)
+
+
+
+2. JSON
+
+A partir d'un log :
+
+{"TAGS":".source.s_src","SOURCEIP":"127.0.0.1","SEQNUM":"927","PROGRAM":"CRON","PRIORITY":"info","PID":"7539","MESSAGE":"(noghost) CMD (python2.7 /home/noghost/TIM/cron/ping004.py > /dev/null)","LEGACY_MSGHDR":"CRON[7539]: ","HOST_FROM":"deuX260","HOST":"deuX260","FACILITY":"cron","DATE":"May  4 21:48:01"}
+
+Comment le traiter ?
+
+les fichiers sont dans 
+TIM/json
+
+
+le charger en python :
+
+import json
+
+with open('tableau.json', 'r') as f:
+        datas = json.load(f)
+
+
+le traiter ?
+
+import json
+
+data = '{"name": "noghost","age":"43"}'
+
+parsed_json = json.loads(data)
+
+print(parsed_json['name'])
+print(parsed_json['age'])
+

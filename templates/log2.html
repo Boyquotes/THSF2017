@@ -1,0 +1,73 @@
+<html>
+
+	<head>
+	<meta charset="utf-8" />
+	<title>LOG</title>
+	
+	<script src={{url_for('static', filename='js/jquery-1.0.1.pack.js')}} type="text/javascript"></script>
+    
+    <script type="text/javascript">
+            $(document).ready(
+                    })
+
+    </script>
+
+				<style>
+				.type {
+  				font-family: monospace;
+				}
+				#introduction {
+  				color: gray;
+				}
+
+				</style>
+
+
+	<link  rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/log.css')}}">
+	</head>
+
+	<body>
+
+		<div id="main">
+		
+			<div id="texte">
+
+			{% extends "entete.html" %}
+
+			{% block content %}
+			
+			<h1 >TIM REBOOT</h1>
+			
+				<h3>LOGS LOGS LOGS LOGS</h3>
+			
+			</div>
+
+			<div id="contenu">
+						
+						<ul id="nav-box">
+							<li><a href="../">test</a></li>	
+							<li><a href="lePing">PING </a></li>
+							<li><a href="listageMachines">Lister </a></li>
+							<li><a href="TIM">TIM</a></li>
+						</ul>
+
+				<div id="centre">
+						
+						<p>		
+							<!-- SORTIE DU FICHIER LOG -->  
+						
+						<ul>{{ out }}</ul>
+						
+						
+						</p>
+						
+				</div>		
+				
+			</div>
+			{% endblock %}
+
+		</div>
+
+	</body>
+
+</html>

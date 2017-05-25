@@ -1,0 +1,20 @@
+DOCUMENTATION
+
+.....
+libpq-dev
+build-dep python-psycopg2
+libpq-dev python-dev
+python-psycopg2
+---
+apt-get install build-essential libssl-dev libffi-dev python-dev
+
+flask
+urllib2 
+rivescript
+jsonify
+
+cryptography
+pyparsing
+appdirs
+pyopenssl
+############

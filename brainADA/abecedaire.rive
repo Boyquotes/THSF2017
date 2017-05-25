@@ -1,0 +1,30 @@
++ abecedaire
+- abecedaire ok {topic=abecedaire}
+
+> topic abecedaire
+
+  // This will match if the word "sorry" exists ANYWHERE in their message
+  + a
+  - anonymous, ANSSI
+
+  + b
+  - b  
+
+  + c
+  - chiffrement 
+
+  + d
+  - dictionnaire
+
+  + e
+  - e
+
+  + f
+  - f
+ 
+  + merci
+  - you re welcome {topic=random}
+
+  + ok
+  - changeons de sujet {topic=random}
+< topic

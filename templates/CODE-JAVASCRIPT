@@ -1,0 +1,64 @@
+CODE JAVASCRIPT
+
+
+
+var image = new Image();
+image.src = '/static/images/background.png';
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+
+$(image).load(function() 	{
+ctx.drawImage(image, 0, 0);
+var top = 426;
+var left = 42;
+var size = 26;
+var cols = ligs = 8;
+var space = 2;
+		    	    	
+//var inter = setInterval(animate,20);		
+				
+animate();
+
+function animate()
+{
+for(var i=0; i<table.length;i++)
+	{
+	for(var j=0; j<table[i].length;j++)
+		{
+		var tile = table[i][j];
+		afficherMap(tile);
+		}
+	}
+	
+
+function afficherMap(tile)
+	{
+		if(tile==0)
+		{
+		ctx.fillStyle="red";
+		//ctx.fillRect(top,left,size,size);
+		//ctx.fillRect(j,i,size,size);
+		ctx.clearRect(top + j*(size+space),left + i*(size+space),size,size);
+		ctx.fillRect(top + j*(size+space),left + i*(size+space),size,size);
+		}
+		else if(tile==1)
+		{
+		ctx.fillStyle="green";
+		ctx.clearRect(top + j*(size+space),left + i*(size+space),size,size);
+		ctx.fillRect(top + j*(size+space),left + i*(size+space),size,size);
+		}
+		else if(tile==2)
+		{
+		ctx.fillStyle="blue";
+		ctx.clearRect(top + j*(size+space),left + i*(size+space),size,size);
+		ctx.fillRect(top + j*(size+space),left + i*(size+space),size,size);
+		}
+		
+	}
+	
+}
+
+
+										});
+
+	    	}

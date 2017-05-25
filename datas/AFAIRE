@@ -1,0 +1,40 @@
+20160703
+
+BASE DE DONNEES
+
+machines
+
+id_machines
+adresseMac
+addresseIp
+type
+connectee
+
+personnes
+id_personnes
+telephone
+id_machines
+
+le programme permet de :
+1. LISTER LES MACHINES
+2. MODIFIER LES MACHINE
+3. ANNUAIRE UTILISATEURS
+
+connexion https sur le port 8080
+
+-----
+
+20161115
+
+On reprend le projet :
+
+1. faire un lien qui execute un script python
+2. faire les réponses pour les WAN :
+- alicelab
+- canet
+- lisses
+- cavaillon
+- perpignan
+
+3.
+

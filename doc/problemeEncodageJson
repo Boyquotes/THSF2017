@@ -1,0 +1,34 @@
+Having:
+
+import json
+
+d = """{"Aa": 1, "BB": "blabla", "cc": "False"}"""
+
+d1 = json.loads(d)              # Produces a dictionary out of the given string
+d2 = json.dumps(d)              # Produces a string out of a given dict or string
+d3 = json.dumps(json.loads(d))  # 'dumps' gets the dict from 'loads' this time
+
+print "d1:  " + str(d1)
+print "d2:  " + d2
+print "d3:  " + d3
+
+Prints:
+
+d1:  {u'Aa': 1, u'cc': u'False', u'BB': u'blabla'}
+d2:  "{\"Aa\": 1, \"BB\": \"blabla\", \"cc\": \"False\"}"
+d3:  {"Aa": 1, "cc": "False", "BB": "blabla"}
+
+shareimprove this answer
+	
+edited Jan 7 '16 at 8:59
+	
+answered Dec 27 '15 at 10:56
+Mercury
+892816
+	
+1 	 
+	
+Huh? json.dumps converts the dict back to a (JSON-encoded) string. That's not what the OP wanted to do. -1. – Mark Amery Jan 16 '16 at 13:36
+3 	 
+	
+But if you use it together with json.loads it outputs the dictionary without the encoded characters wihch is an answer for the question (this is d3 print above) read the answer well! – Mercury Jan 16 '16 at 13:53 

@@ -1,0 +1,29 @@
+JSON
+
+Pour le terrain :
+
+import json
+
+with open('tableau.json', 'r') as f:
+	datas = json.load(f)
+
+#####
+print(datas)
+{u'terrain': [[0, 2, 0, 1, 1, 1, 1, 1], [2, 1, 1, 1, 2, 2, 2, 2], [0, 2, 0, 2, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 1], [2, 0, 2, 0, 0, 0, 0, 0], [0, 2, 0, 0, 1, 0, 1, 2], [2, 0, 2, 0, 1, 0, 1, 2]]}
+
+
+datas['terrain'][0]
+[0, 2, 0, 1, 1, 1, 1, 1]
+
+pour affecter :
+
+datas['terrain'][0]= [2, 2, 2, 1, 1, 1, 1, 1]
+
+CRON
+
+ping 8.8.8.8
+
+si ok alors
+
+datas['terrain'][0][0]= 2
+

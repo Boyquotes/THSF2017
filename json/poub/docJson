@@ -1,0 +1,59 @@
+import json
+
+with open('tableau.json', 'r') as f:
+	datas = json.load(f)
+
+#####
+print(datas)
+{u'terrain': [[0, 2, 0, 1, 1, 1, 1, 1], [2, 1, 1, 1, 2, 2, 2, 2], [0, 2, 0, 2, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 1], [2, 0, 2, 0, 0, 0, 0, 0], [0, 2, 0, 0, 1, 0, 1, 2], [2, 0, 2, 0, 1, 0, 1, 2]]}
+
+
+datas['terrain'][0]
+[0, 2, 0, 1, 1, 1, 1, 1]
+
+
+
+pour affecter :
+
+datas['terrain'][0]= [2, 2, 2, 1, 1, 1, 1, 1]
+
+#######################################################################
+
+et pour écrire :
+
+
+import json
+with open('dataWINDOWS.txt', 'w') as outfile:
+    json.dump(datas, outfile)
+
+lire joliement
+
+with open('messagesOut.json', 'w') as f:
+        json.dump(out, f, indent=4)
+
+
+##############
+
+
+1. #################################################
+
+ping 8.8.8.8
+
+si ok
+
+alors
+
+datas['terrain'][0][0]= 2
+
+2.
+
+VPN
+
+ping 192.168.97.x	USA 		datas['terrain'][0][1]
+ping 192.168.97.x	PARIS		datas['terrain'][0][1
+ping 192.168.97.x	CAVAILLON	datas['terrain'][0][1
+
+#####################################################
+
+
+

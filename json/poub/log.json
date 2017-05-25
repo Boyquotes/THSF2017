@@ -1,0 +1,14 @@
+{
+    "HOST_FROM": "deuX260", 
+    "TAGS": ".source.s_src", 
+    "LEGACY_MSGHDR": "CRON[8069]: ", 
+    "PROGRAM": "CRON", 
+    "DATE": "May  4 21:54:11", 
+    "SOURCEIP": "127.0.0.1", 
+    "SEQNUM": "11", 
+    "FACILITY": "authpriv", 
+    "PID": "8069", 
+    "HOST": "deuX260", 
+    "PRIORITY": "info", 
+    "MESSAGE": "pam_unix(cron:session): session closed for user noghost"
+}

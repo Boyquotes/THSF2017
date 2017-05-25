@@ -1,0 +1,41 @@
+<html>
+
+	<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link  rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/listageMachines.css')}}">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	</head>
+
+	<body>
+
+		<div id="main">
+
+			<div id="contenu">
+						
+						<ul id="nav-box">	
+							<li><a href="creationMachines">Creer Machine</a></li>
+							<li><a href="listageMachines">Lister Machines</a></li>
+							<li><a href="TIM">TIM</a></li>
+						</ul>
+
+				<div id="centre">
+					<h3>Modification Machines</h3>
+					<form class="pure-form" action="modif" method="POST">
+    		    	<fieldset class="pure-group" action="modif" method="POST" }>
+    		    	<input type="hidden" name="id" value="{{ id }}" />
+    				<input type="text" class="pure-input-1-2" placeholder="whatis" name="whatis" value = "{{ whatis }}">
+    				<input type="text" class="pure-input-1-2" placeholder="mac" name="mac" value = "{{ mac }}" >
+    				<input type="text" class="pure-input-1-2" placeholder="ip" name="ip" value = "{{ ip }}">
+
+    				</fieldset>
+			    	<button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Envoyer</button>
+					</form>
+				</div>
+				
+			</div>		
+		</div>
+
+	</body>
+
+</html>

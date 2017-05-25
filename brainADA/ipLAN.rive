@@ -1,0 +1,31 @@
++ ip lan
+- lan ok {topic=lan}
+
+> topic lan 
+
+  // This will match if the word "sorry" exists ANYWHERE in their message
+  + raspberry
+  - 172.16.0.241{topic=raspberry}
+
+  + treso
+  - 172.16.0.
+
+  + domaine
+  - 172.16.0.1
+
+> topic raspberry
+  + mot de passe
+  - R4sp16241
+
+  + dhcp
+  - ???
+
+  + xxx
+  - ???
+ 
+  + merci
+  - you re welcome {topic=random}
+
+  + ok
+  - changeons de sujet {topic=random}
+< topic

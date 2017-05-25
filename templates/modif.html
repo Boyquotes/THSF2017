@@ -1,0 +1,58 @@
+<html>
+
+	<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link  rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styleForm.css')}}">
+	</head>
+
+	<body>
+
+		<div id="main">
+		
+			<div id="texte">
+
+			<h1>Web Ui</h1>
+			<p>
+
+			</div>
+
+			<div id="contenu">
+						
+						<ul id="nav-box">	
+							<li><a href="creationMachines">Creer Machine</a></li>
+							<li><a href="listageMachines">Lister Machines</a></li>
+							<li><a href="TIM">TIM</a></li>
+						</ul>
+
+				<div id="centre">
+						<p>					
+						
+							<h1>MODIFICATION</h1>
+
+							<p>je recupere les variables 
+								<ul>
+									<li>description : {{ whatis }} 
+									<li>adresse IP : {{ ip }}
+									<li>adresse MAC : {{ mac }}
+									<li>ID : {{ iD }}
+
+								<br />fin de la requete fin fin fin fin
+
+							</p>
+						
+				</div>
+				
+				<div id="droite">
+					<p>
+						<p>
+						<p>DROITE</p>
+					</p>
+				</div>
+
+			</div>		
+		</div>
+
+	</body>
+
+</html>

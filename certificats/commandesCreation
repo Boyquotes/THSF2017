@@ -1,0 +1,12 @@
+openssl genrsa -des3 -out ADA.key 2048
+
+openssl req -new -key ADA.key -out ADA.csr
+
+cp ADA.key ADA.key.tmp
+
+openssl rsa -in ADA.key.tmp -out ADA.key
+
+openssl x509 -req -days 3650 -in ligams.com.csr -signkey ligams.com.key -out ligams.com.crt
+
+openssl x509 -req -days 3650 -in ADA.csr -signkey ADA.key -out ADA.crt
+

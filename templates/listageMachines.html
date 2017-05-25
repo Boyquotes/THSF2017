@@ -1,0 +1,52 @@
+<html>
+
+	<head>
+	<meta charset="utf-8" />
+	<title>Listage</title>
+	
+	<link  rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/listageMachines.css')}}">
+
+	</head>
+
+	<body>
+
+		<div id="main">
+		
+
+			<div id="contenu">
+						
+						<ul id="nav-box">	
+							<li><a href="creationMachines">Creer Machine</a></li>
+							<li><a href="listageMachines">Lister</a></li>
+							<li><a href="TIM">TIM</a></li>
+						</ul>
+
+				<div id="centre">
+						<p>
+							<h3>Liste des machines</h3>
+							<p>
+								{% for out in modele %}
+									<form method="post" action="modifierMachine">
+                    					<input type="text" name="whatis" value="{{ out[2]}}" readonly />
+                    					<input type="text" name="ip" value="{{ out[1]}}" readonly />
+                    					<input type="text" name="mac" value="{{ out[3]}}" readonly />
+                    					<input type="submit" name="choix" value="mod" />
+                    					<input type="submit" name="choix" value="sup" />
+                    				</form>
+								{% endfor %}
+							</p>
+				</div>
+				
+				<div id="droite">
+					<p>
+						<p>
+						<p>TIM UI v0.1</p>
+					</p>
+				</div>
+				
+			</div>		
+		</div>
+
+	</body>
+
+</html>

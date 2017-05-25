@@ -1,0 +1,21 @@
+<html>
+
+  <head>
+    {% if title %}
+    <title>{{ title }} - Goliath - </title>
+    {% else %}
+    <title>ADA</title>
+    {% endif %}
+  </head>
+
+  <body>
+    <div>
+      <a href="/TIM">Home</a>
+      <a href="/creationMachines">creationMachines</a>
+    </div>
+    <hr>
+
+	{% block content %}{% endblock %}
+  </body>
+
+</html>

@@ -1,0 +1,9 @@
++ mon ip
+- <call>myip</call>
+
+> object myip python
+import urllib2
+response = urllib2.urlopen('http://www.u8ik.com/ip/ip.php')
+html = response.read()
+return html
+< object

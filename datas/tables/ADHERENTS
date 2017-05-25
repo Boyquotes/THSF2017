@@ -1,0 +1,8 @@
+CREATE TABLE (
+    id_adherents 	int,
+    nom		varchar(50),
+    prenom	varchar(50),
+    mail	varchar(50),	
+    interet     varchar(40),
+    date        date
+);
