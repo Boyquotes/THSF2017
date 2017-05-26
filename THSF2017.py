@@ -16,8 +16,8 @@ rs.sort_replies()
 
 from OpenSSL import SSL
 context = SSL.Context(SSL.SSLv23_METHOD)
-context.use_privatekey_file('/home/noghost/TIM/certificats/ADA.key')
-context.use_certificate_file('/home/noghost/TIM/certificats/ADA.crt')
+context.use_privatekey_file('./certificats/ADA.key')
+context.use_certificate_file('./certificats/ADA.crt')
 
 from scapy.all import *
 
